@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
-    "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
     "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
     "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -19,34 +19,31 @@
     "incremental": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "api": [
-        "../api"
-      ],
-      "ui": [
-        "../ui"
-      ],
-      "utils": [
-        "../utils"
-      ],
-      "auth": [
-        "../auth"
-      ]
-    },
     "plugins": [
       {
         "name": "next"
       }
     ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "api": [
+        "../../packages/api"
+      ],
+      "ui": [
+        "../../packages/ui"
+      ],
+      "utils": [
+        "../../packages/utils"
+      ],
+      "auth": [
+        "../../packages/auth"
+      ]
+    }
   },
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
+    "src"
   ],
   "exclude": [
     "node_modules"
