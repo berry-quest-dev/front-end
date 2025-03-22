@@ -2,21 +2,21 @@
   "extends": "../../packages/config/tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "../../",
+    "composite": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
-  },
-  "paths": {
-    "@/*": [
-      "./src/*"
-    ]
+    "jsx": "preserve"
+    // "jsx": "preserve"
   },
   "include": [
     "src/**/*",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "../../packages/ui"
   ],
   "exclude": [
     "node_modules",

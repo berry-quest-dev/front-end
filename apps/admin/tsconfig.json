@@ -2,12 +2,14 @@
   "extends": "../../packages/config/tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "../../",
+    "composite": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
+    // "jsx": "preserve"
   },
   "include": [
     "src/**/*",

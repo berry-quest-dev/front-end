@@ -1,3 +1,5 @@
+import { Button } from "@packages/ui";
+
 export default function Home() {
-  return "Hello WEB";
+  return <Button/>;
 }
