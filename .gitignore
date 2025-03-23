@@ -46,3 +46,4 @@ next-env.d.ts
 
 # folder
 apps/mobile
+*storybook.log
