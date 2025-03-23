@@ -9,7 +9,6 @@
         "name": "next"
       }
     ],
-    // "jsx": "preserve"
   },
   "include": [
     "src/**/*",
