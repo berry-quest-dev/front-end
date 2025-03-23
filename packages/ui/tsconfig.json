@@ -1,16 +1,14 @@
 {
   "extends": "../config/tsconfig.base.json",
   "compilerOptions": {
-    "types": ["react"],
+    "types": [
+      "react"
+    ],
     "outDir": "dist",
     "rootDir": "../../",
     "declaration": true,
     "declarationMap": true,
     "composite": true,
-    // "module": "ESNext",
-    // "moduleResolution": "Node",
-    // "target": "ESNext",
-    // "jsx": "react-jsx"
   },
   "include": [
     "src/**/*"
