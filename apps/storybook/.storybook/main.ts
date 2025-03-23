@@ -18,10 +18,21 @@ const config: StorybookConfig = {
   },
   viteFinal: (config) => {
     config.resolve = {
-      alias: {
-        "@packages/ui": path.resolve(__dirname, "../../packages/ui/src"),
-      },
-      ...config.resolve,
+      ...(config.resolve || {}),
+      alias: [
+        {
+          find: "@ui",
+          replacement: path.resolve(__dirname, "../../../packages/ui/src"),
+        },
+        // {
+        //   find: "@api",
+        //   replacement: path.resolve(__dirname, "../../../packages/api/src"),
+        // },
+        // {
+        //   find: "@utils",
+        //   replacement: path.resolve(__dirname, "../../../packages/utils/src"),
+        // },
+      ],
     };
     return config;
   },
