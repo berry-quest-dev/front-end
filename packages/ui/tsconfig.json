@@ -5,10 +5,11 @@
       "react"
     ],
     "outDir": "dist",
-    "rootDir": "../../",
+    "rootDir": "src",
     "declaration": true,
     "declarationMap": true,
     "composite": true,
+    "jsx": "react-jsx"
   },
   "include": [
     "src/**/*"

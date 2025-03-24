@@ -12,7 +12,7 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true,
+    // "noEmit": true,
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -22,24 +22,33 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
+      "@packages/api/*": [
+        "packages/api/src/*"
       ],
-      "api": [
-        "../../packages/api"
+      "@packages/auth/*": [
+        "packages/auth/*"
       ],
-      "@packages/ui": [
-        "../../packages/ui/src"
+      "@packages/config/*": [
+        "packages/config/*"
+      ],
+      "@packages/styles/*": [
+        "packages/styles/*"
       ],
       "@packages/ui/*": [
-        "../../packages/ui/src/*"
+        "packages/ui/src/*"
       ],
-      "utils": [
-        "../../packages/utils"
+      "@packages/ui": [
+        "packages/ui/src"
       ],
-      "auth": [
-        "../../packages/auth"
-      ]
+      "@packages/utils/*": [
+        "packages/utils/*"
+      ],
+      "@web/*": [
+        "apps/web/src/*"
+      ],
+      "@admin/*": [
+        "apps/admin/src/*"
+      ],
     }
   },
   "include": [
